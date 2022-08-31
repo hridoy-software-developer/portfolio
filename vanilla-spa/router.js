@@ -29,28 +29,3 @@ const pageRender = async () => {
 
 window.route = "";
 pageRender('');
-
-
-
-// const handleLocation = async () => {
-//     if (location.hostname === "localhost" || location.hostname === "127.0.0.1"){
-//         var base_url = "http://localhost:3000";
-//     }else{
-//         var base_url = "https://hridoy-software-developer.github.io/portfolio/vanilla-spa/";
-//     }
-    
-//     // const path = window.location.pathname;
-//     var path = location.href.match(/([^\/]*)\/*$/)[1];
-//     console.log("base_url : "+base_url);
-//     console.log("href : " + path);
-
-
-//     const route = routes[path] || routes[404];
-//     const html = await fetch(route).then((data) => data.text());
-//     document.getElementById("main-page").innerHTML = html;
-// };
-
-// window.onpopstate = handleLocation;
-// window.route = route;
-
-// handleLocation();
