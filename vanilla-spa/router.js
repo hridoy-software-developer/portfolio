@@ -19,8 +19,8 @@ const handleLocation = async () => {
         var base_url = "https://hridoy-software-developer.github.io/portfolio/vanilla-spa/";
     }
     
-    const path = window.location.pathname;
-    // var path = location.href.match(/([^\/]*)\/*$/)[1];
+    // const path = window.location.pathname;
+    var path = location.href.match(/([^\/]*)\/*$/)[1];
     console.log("base_url : "+base_url);
     console.log("href : " + path);
 
