@@ -20,6 +20,11 @@ const handleLocation = async () => {
     }
     
     const path = window.location.pathname;
+    // var path = location.href.match(/([^\/]*)\/*$/)[1];
+    console.log("base_url : "+base_url);
+    console.log("href : " + path);
+
+    
     const route = routes[path] || routes[404];
     const html = await fetch(route).then((data) => data.text());
     document.getElementById("main-page").innerHTML = html;
