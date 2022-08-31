@@ -13,8 +13,13 @@ const routes = {
 };
 
 const handleLocation = async () => {
+    if (location.hostname === "localhost" || location.hostname === "127.0.0.1"){
+        var base_url = "http://localhost:3000";
+    }else{
+        var base_url = "https://hridoy-software-developer.github.io/portfolio/vanilla-spa/";
+    }
+    
     const path = window.location.pathname;
-    console.log(path);
     const route = routes[path] || routes[404];
     const html = await fetch(route).then((data) => data.text());
     document.getElementById("main-page").innerHTML = html;
