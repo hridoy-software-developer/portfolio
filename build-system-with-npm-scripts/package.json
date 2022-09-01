@@ -1,0 +1,15 @@
+# https://github.com/yongzhihuang/PentaCode/tree/master/staticBoilerplateWithNPM
+# https://www.youtube.com/watch?v=pkdYYCIzg_I
+
+{
+  "name": "build-system-with-npm-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "python -m SimpleHTTPServer 8000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
