@@ -1,11 +1,18 @@
 {
-  "name": "my-project",
-  "source": "src/index.html",
+  "name": "navigo-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "navigo": "8.8.12"
   },
   "devDependencies": {
-    "parcel": "latest"
-  }
+    "@babel/core": "7.2.0",
+    "parcel-bundler": "^1.6.1"
+  },
+  "keywords": []
 }
