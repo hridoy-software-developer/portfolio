@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "serve": "rimraf dist &&  parcel index.html --open",
-    "build": "parcel build src/index.html"
+    "serve": "rimraf dist && NODE_ENV=production parcel index.html --open",
+    "build": "NODE_ENV=production && parcel build src/index.html"
   },
   "dependencies": {
     "jquery": "^3.6.1",
