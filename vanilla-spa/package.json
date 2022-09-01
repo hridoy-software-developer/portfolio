@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
+  "source": "src/index.html",
   "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "start": "rimraf dist && parcel src/index.html --open",
+    "build": "parcel build src/index.html"
   },
   "dependencies": {
-    "navigo": "8.8.12"
+    "navigo": "8.8.12",
+    "rimraf": "^3.0.2"
   },
   "devDependencies": {
     "@babel/core": "7.2.0",
