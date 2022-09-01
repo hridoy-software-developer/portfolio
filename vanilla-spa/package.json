@@ -1,24 +1,11 @@
 {
-  "name": "navigo-example",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.html",
+  "name": "my-project",
+  "source": "src/index.html",
   "scripts": {
-    "serve": "rimraf dist && NODE_ENV=production parcel index.html --open",
-    "build": "NODE_ENV=production && parcel build src/index.html"
-  },
-  "dependencies": {
-    "jquery": "^3.6.1",
-    "navigo": "8.8.12",
-    "vue": "^3.2.38",
-    "vue-hot-reload-api": "^2.3.4"
+    "start": "parcel",
+    "build": "parcel build"
   },
   "devDependencies": {
-    "@babel/core": "7.2.0",
-    "@vue/component-compiler-utils": "^3.3.0",
-    "parcel-bundler": "^1.6.1",
-    "rimraf": "^3.0.2",
-    "vue-template-compiler": "^2.7.10"
-  },
-  "keywords": []
+    "parcel": "latest"
+  }
 }
